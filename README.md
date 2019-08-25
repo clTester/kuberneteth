@@ -51,7 +51,7 @@ nodes:
     # this config values will alter the geth config toml file which will end up as a ConfigMap in the k8s manifest
     geth:
       # address where the mining rewards will go to (optional)
-      Eth_Etherbase: "0x023e291a99d21c944a871adcc44561a58f99bdbc"
+      Eth_Etherbase: "0x6B1FA9096d00Bce4Cb8B45cE0a208d54902D39aa"
       # threads (optional)
       Eth_MinerThreads: 1
       Node_UserIdent: miner

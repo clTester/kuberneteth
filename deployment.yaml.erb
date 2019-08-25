@@ -3,8 +3,7 @@
 <%
 def set_node_template_vars(values)
   @Eth_Etherbase         = values["geth"]["Eth_Etherbase"]
-  @Eth_MinerThreads      = values["geth"]["Eth_MinerThreads"]
-  @Node_UserIdent        = values["geth"]["Node_UserIdent"]
+   @Node_UserIdent        = values["geth"]["Node_UserIdent"]
   @Node_DataDir          = values["geth"]["Node_DataDir"]
   @Node_HTTPPort         = values["geth"]["Node_HTTPPort"]
   @Node_WSPort           = values["geth"]["Node_WSPort"]
@@ -19,6 +18,9 @@ def set_node_template_vars(values)
 end
 -%>
 <%- unless @config["keystore"]["secret"] -%>
+
+# @Eth_MinerThreads      = values["geth"]["Eth_MinerThreads"]
+
 ---
 apiVersion: v1
 kind: ConfigMap
